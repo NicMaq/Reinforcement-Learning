@@ -16,8 +16,8 @@ To run your own experiments, modify the global hyperparameters at the beginning 
 
 Example: <br>
 
-python GYM_BREAKOUT.py --new --target -1 --env BreakoutDeterministic-v4
-python GYM_SPACE_INVADERS.py --new --target 1 --env SpaceInvaders-v4 --render
-python GYM_SPACE_INVADERS.py --new --target -1 --env SpaceInvaders-v4 --render --policy softmax
+python GYM_BREAKOUT.py --new --target -1 --env BreakoutDeterministic-v4<br>
+python GYM_SPACE_INVADERS.py --new --target 1 --env SpaceInvaders-v4 --render<br>
+python GYM_SPACE_INVADERS.py --new --target -1 --env SpaceInvaders-v4 --render --policy softmax<br>
 
 
