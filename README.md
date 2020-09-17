@@ -6,7 +6,10 @@ I also shared two notebooks. The first is an in-depth explanation of the algorit
 
 To run your own experiments, modify the global hyperparameters at the beginning of each file. Additionally, I used argparse for a few settings: 
 
---new to create a new model<td>
+--new to create a new model
+--
+
+  
 --name name_of_the_model to use an existing model
 --env name_of_the_environment to set the OpenAI Gym environment
 --render to render the games
