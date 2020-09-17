@@ -1,11 +1,10 @@
-# H1
-Are the space invaders deterministic or stochastic?
+# Are the space invaders deterministic or stochastic?
 
-Google deepmind achieved human-level performance on 49 Atari games using the Arcade Learning Environment (ALE). This repository contains the code I used to reproduce this performance on Breakout and Space Invaders with the exact same network architecture (DQN). <br>
+Google deepmind achieved human-level performance on 49 Atari games using the Arcade Learning Environment (ALE). I discuss in this [article](https://medium.com/@nicolasmaquaire/are-the-space-invaders-deterministic-or-stochastic-595a30becae2) the efficiency of the mechanisms used by Deepmind and Open AI for injecting stochasticity in the ALE.<br>
 
-The methodology is fully described in the [article](https://medium.com/@nicolasmaquaire/are-the-space-invaders-deterministic-or-stochastic-595a30becae2) where I discuss the efficiency of the mechanisms used by Deepmind and Open AI for injecting stochasticity in the ALE.<br>
+This repository contains the code I used to reproduce this performance on Breakout and Space Invaders with the exact same network architecture (DQN).<br>
 
-I also shared two notebooks. The first is an in-depth explanation of the algorithm I used.The second, an explanation of the two soft policies I implemented: e-greedy and softmax. <br>
+I also shared two notebooks. The first is an in-depth explanation of the algorithm I used. The second, an explanation of the two soft policies I implemented: e-greedy and softmax. <br>
 
 To run your own experiments, modify the global hyperparameters at the beginning of each file. Additionally, I used argparse for a few settings: <br>
 
