@@ -4,7 +4,7 @@ Google deepmind achieved [human-level performance on 49 Atari games](https://www
 
 This repository contains the code I used to reproduce this performance on Breakout and Space Invaders with the exact same network architecture (DQN).<br>
 
-I also shared two notebooks. The first is an in-depth explanation of the algorithm I used. The second is an explanation of the two soft policies I implemented: e-greedy and softmax. <br>
+I also shared two notebooks. The [first](https://github.com/NicMaq/Reinforcement-Learning/blob/master/Breakout_explained.ipynb) is an in-depth explanation of the algorithm I used. The second is an explanation of the two soft policies I implemented: e-greedy and softmax. <br>
 
 To run your own experiments, modify the global hyperparameters at the beginning of each file. Additionally, I used argparse for a few settings: <br>
 
