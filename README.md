@@ -22,4 +22,4 @@ python GYM_BREAKOUT.py --new --target -1 --env BreakoutDeterministic-v4<br>
 python GYM_SPACE_INVADERS.py --new --target 1 --env SpaceInvaders-v4 --render<br>
 python GYM_SPACE_INVADERS.py --new --target -1 --env SpaceInvaders-v4 --render --policy softmax<br>
 
-
+You can compare your experiments with the tensorboard runs I added to this repository. You can find the hyperparamters of these experiments in the chapter [methods](https://docs.google.com/document/d/e/2PACX-1vQVP3qsMYCQrchrfmr2zznL_lFt-bHGgbolr40VxdMKab3k3ksDapX7b_XqjZXmnXuZTVOhqR_QJy_n/pub) of the article.
