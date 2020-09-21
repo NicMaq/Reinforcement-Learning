@@ -1,10 +1,19 @@
 # Are the space invaders deterministic or stochastic?
 
-Google deepmind achieved [human-level performance on 49 Atari games](https://www.nature.com/articles/nature14236) using the Arcade Learning Environment ([ALE](https://arxiv.org/abs/1207.4708)). I discuss in this [article](https://medium.com/@nicolasmaquaire/are-the-space-invaders-deterministic-or-stochastic-595a30becae2) the efficiency of the mechanisms used by Deepmind and Open AI for injecting stochasticity in the ALE.<br>
-
-This repository contains the code I used to reproduce this performance on Breakout and Space Invaders with the exact same network architecture (DQN).<br>
-
-I also shared two notebooks. The [first](https://github.com/NicMaq/Reinforcement-Learning/blob/master/Breakout_explained.ipynb) is an in-depth explanation of the algorithm I used. The [second](https://github.com/NicMaq/Reinforcement-Learning/blob/master/e_greedy_and_softmax_explained.ipynb) is an explanation of the two soft policies I implemented: e-greedy and softmax. <br>
+<table bordercolor:red>
+    <tr>
+        <td><img src="GymBreakout-20200906194629-15893-427.0_small.gif" width="400" /></td>
+        <td valign="top">
+          Google deepmind achieved <a href="https://www.nature.com/articles/nature14236">human-level performance on 49 Atari games</a> 
+          using the Arcade Learning Environment (<a href="https://arxiv.org/abs/1207.4708">ALE</a>). 
+          I discuss in this <a href="https://medium.com/@nicolasmaquaire/are-the-space-invaders-deterministic-or-stochastic-595a30becae2">article</a> 
+          the efficiency of the mechanisms used by Deepmind and Open AI for injecting stochasticity in the ALE.<br>
+          This repository contains the code I used to reproduce this performance on Breakout and Space Invaders with the exact same network architecture (DQN).<br>
+          I also shared two notebooks. The <a href="https://github.com/NicMaq/Reinforcement-Learning/blob/master/Breakout_explained.ipynb">first</a>
+          is an in-depth explanation of the algorithm I used. The <a href="https://github.com/NicMaq/Reinforcement-Learning/blob/master/e_greedy_and_softmax_explained.ipynb">second</a> is an explanation of the two soft policies I implemented: e-greedy and softmax.
+        </td>
+    </tr>
+</table>
 
 To run your own experiments, modify the global hyperparameters at the beginning of each file. Additionally, I used argparse for a few settings: <br>
 
@@ -17,9 +26,14 @@ To run your own experiments, modify the global hyperparameters at the beginning 
 --policy to select a different policy or algorithm. The default is Q-Learning with an e-greedy policy. Other options are “sarsa” to use expected sarsa with an e-greedy policy and “softmax” to use expected sarsa with a softmax policy.<br>
 
 Example: <br>
-
+```
 python GYM_BREAKOUT.py --new --target -1 --env BreakoutDeterministic-v4<br>
+```
+```
 python GYM_SPACE_INVADERS.py --new --target 1 --env SpaceInvaders-v4 --render<br>
+```
+```
 python GYM_SPACE_INVADERS.py --new --target -1 --env SpaceInvaders-v4 --render --policy softmax<br>
+```
 
 You can compare your experiments with the tensorboard runs I added to this repository. You can find the hyperparamters of these experiments in the chapter [methods](https://docs.google.com/document/d/e/2PACX-1vQVP3qsMYCQrchrfmr2zznL_lFt-bHGgbolr40VxdMKab3k3ksDapX7b_XqjZXmnXuZTVOhqR_QJy_n/pub) of the article.
