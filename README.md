@@ -23,17 +23,17 @@ To run your own experiments, modify the global hyperparameters at the beginning 
 --render to render the games<br>
 --target to set the device where the tensorflow operations are executed. Use -1 if you don’t have a GPU.<br>
 --debug to see where the tensorflow operations are executed<br>
---policy to select a different policy or algorithm. The default is Q-Learning with an e-greedy policy. Other options are “sarsa” to use expected sarsa with an e-greedy policy and “softmax” to use expected sarsa with a softmax policy.<br>
+--policy to select a different policy or algorithm. The default is Q-Learning with an e-greedy policy. Other options are “sarsa” to use expected sarsa with an e-greedy policy and “softmax” to use expected sarsa with a softmax policy.
 
-Example: <br>
+Example: 
 ```
-python GYM_BREAKOUT.py --new --target -1 --env BreakoutDeterministic-v4<br>
-```
-```
-python GYM_SPACE_INVADERS.py --new --target 1 --env SpaceInvaders-v4 --render<br>
+python GYM_BREAKOUT.py --new --target -1 --env BreakoutDeterministic-v4
 ```
 ```
-python GYM_SPACE_INVADERS.py --new --target -1 --env SpaceInvaders-v4 --render --policy softmax<br>
+python GYM_SPACE_INVADERS.py --new --target 1 --env SpaceInvaders-v4 --render
+```
+```
+python GYM_SPACE_INVADERS.py --new --target -1 --env SpaceInvaders-v4 --render --policy softmax
 ```
 
 You can compare your experiments with the tensorboard runs I added to this repository. You can find the hyperparamters of these experiments in the chapter [methods](https://docs.google.com/document/d/e/2PACX-1vQVP3qsMYCQrchrfmr2zznL_lFt-bHGgbolr40VxdMKab3k3ksDapX7b_XqjZXmnXuZTVOhqR_QJy_n/pub) of the article.
